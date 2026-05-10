@@ -3,83 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Processos | Cecilia Baptista · Gestão do Eu</title>
-<meta name="description" content="Processos terapêuticos e de autoconhecimento com Cecilia Baptista: Anamnese Emocional, Terapia Speed, Jornada I.N.T.E.I.R.A. e Despertando o GPS Interno.">
+<title>E-books | Cecilia Baptista · Gestão do Eu</title>
+<meta name="description" content="11 ebooks de transformação: autossabotagem, liderança, reinvenção 40+, equação emocional, trauma e cura. Por Cecilia Baptista.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-.processos-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3px;
-  max-width: var(--max);
-  margin: 0 auto;
-}
-.processo-card {
-  position: relative;
-  min-height: 520px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.processo-card img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  filter: brightness(0.72) saturate(0.82);
-  transition: filter .4s, transform .5s;
-}
-.processo-card:hover img {
-  filter: brightness(0.88) saturate(1);
-  transform: scale(1.04);
-}
-.processo-card-body {
-  position: relative;
-  z-index: 2;
-  padding: 36px 40px 40px;
-  background: linear-gradient(to top, rgba(0,0,0,0.88) 55%, transparent);
-}
-.processo-num {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--dourado);
-  margin-bottom: 10px;
-}
-.processo-card h3 {
-  font-family: var(--serif);
-  font-size: 1.55rem;
-  font-style: italic;
-  color: var(--branco);
-  line-height: 1.25;
-  margin-bottom: 14px;
-}
-.processo-card p {
-  font-size: 0.82rem;
-  color: rgba(250,250,248,0.62);
-  line-height: 1.72;
-  margin-bottom: 28px;
-}
-.breve-badge {
-  display: inline-block;
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--dourado);
-  border: 1px solid rgba(176,144,72,0.4);
-  padding: 5px 14px;
-  margin-bottom: 14px;
-}
-@media(max-width:900px){
-  .processos-grid { grid-template-columns: 1fr; }
-  .processo-card { min-height: 440px; }
-}
+.ebooks-header{max-width:var(--max);margin:0 auto 56px;display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.ebooks-count{font-family:var(--serif);font-size:4rem;font-style:italic;color:rgba(176,144,72,0.15);line-height:1;flex-shrink:0}
+.grid-ebooks-wrap{max-width:var(--max);margin:0 auto}
+.card-ebook-capa{background:var(--carvao);border-top:2px solid rgba(176,144,72,0.15);position:relative;overflow:hidden;display:flex;flex-direction:column;transition:background .3s,border-color .3s}
+.card-ebook-capa:hover{background:#191919;border-top-color:rgba(176,144,72,0.55)}
+.card-ebook-capa img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;display:block;filter:brightness(0.88) saturate(0.8);transition:filter .3s,transform .4s}
+.card-ebook-capa:hover img{filter:brightness(1) saturate(1);transform:scale(1.02)}
+.card-ebook-capa-body{padding:28px 28px 32px;flex:1;display:flex;flex-direction:column}
+.card-ebook-capa h3{font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--branco);line-height:1.4;margin-bottom:8px;flex:1}
+.card-ebook-capa p{font-size:0.76rem;color:rgba(250,250,248,0.38);line-height:1.65;margin-bottom:20px}
+@media(max-width:900px){.ebooks-header{flex-direction:column;align-items:flex-start}.ebooks-count{display:none}}
 </style>
 </head>
 <body>
@@ -91,108 +30,197 @@
 <ul class="nav-menu">
 <li><a href="index.html">Início</a></li>
 <li><a href="mentoria.html">Mentoria</a></li>
-<li><a href="ebooks.html">E-books</a></li>
-<li><a href="processos.html" class="ativo">Processos</a></li>
+<li><a href="ebooks.html" class="ativo">E-books</a></li>
+<li><a href="processos.html">Processos</a></li>
 <li><a href="palestra.html">Palestra</a></li>
 </ul>
-<a href="https://wa.me/5511991400986?text=Ol%C3%A1%20Cecilia%2C%20quero%20saber%20mais%20sobre%20os%20processos!" class="nav-cta" target="_blank">Quero Iniciar</a>
+<a href="https://wa.me/5511991400986?text=Olá%20Cecilia%2C%20tenho%20interesse%20nos%20ebooks!" class="nav-cta" target="_blank">Falar com a Cecilia</a>
 <button class="nav-toggle" id="toggle" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<section class="page-hero" style="background-image:url('fotos/ANAMNESE%20EMOCIONAL%20foto%20nova.png')">
+<section class="page-hero" style="background-image:url('fotos/GPS%20EMOCIONAL%201%20foto%20nova.jpeg')">
 <div class="page-hero-body">
-<div class="breadcrumb">Cecilia Baptista <span>· Processos</span></div>
-<h1>Escolha sua<br><em>porta de entrada</em></h1>
-<p class="page-hero-sub">Cada processo é uma rota distinta de transformação. Escolha o que mais ressoa com onde você está agora.</p>
+<div class="breadcrumb">Cecilia Baptista <span>· E-books</span></div>
+<h1>Coleção de<br>E-books</h1>
+<p class="page-hero-sub">11 títulos de transformação profunda. Ferramentas práticas para quem está pronta para ressignificar, reconhecer e reinventar.</p>
 </div>
 </section>
 
 <section class="sec sec-dk">
-<div style="max-width:var(--max);margin:0 auto 48px" data-reveal>
-<div class="sec-tag">Processos</div>
-<h2 class="sec-titulo">Escolha sua<br><em>porta de entrada</em></h2>
+<div class="ebooks-header" data-reveal>
+<div>
+<div class="sec-tag">Biblioteca</div>
+<h2 class="sec-titulo">Cada livro,<br><em>uma virada</em></h2>
 </div>
-
-<div class="processos-grid">
-
-<!-- 01 ANAMNESE -->
-<div class="processo-card" data-reveal data-delay="1">
-<img src="fotos/ANAMNESE%20EMOCIONAL%20foto%20nova.png" alt="Anamnese Emocional">
-<div class="processo-card-body">
-<div class="processo-num">01 · Processo</div>
-<h3>Anamnese Emocional</h3>
-<p>Diagnóstico profundo psicoemocional que mapeia padrões, crenças e bloqueios invisíveis que moldam sua realidade. O processo único que revela quem você realmente é por baixo das máscaras.</p>
-<a href="https://wa.me/5511991400986?text=Ol%C3%A1%20Cecilia%2C%20quero%20iniciar%20a%20Anamnese%20Emocional!" class="btn btn-gold btn-sm" target="_blank">Iniciar Anamnese</a>
+<div class="ebooks-count">11</div>
 </div>
-</div>
+<div class="grid-ebooks-wrap">
+<div class="grid-ebooks">
 
-<!-- 02 TERAPIA SPEED -->
-<div class="processo-card" data-reveal data-delay="2">
-<img src="fotos/TERAPIA%20SPEED%201%20foto%20nova.jpg" alt="Terapia Speed">
-<div class="processo-card-body">
-<div class="processo-num">02 · Processo</div>
-<h3>Terapia Speed</h3>
-<p>Processo terapêutico intensivo e focado para resultados rápidos. Ideal para quem precisa de clareza e movimento em momentos críticos de decisão ou transição de vida.</p>
-<a href="https://wa.me/5511991400986?text=Ol%C3%A1%20Cecilia%2C%20quero%20agendar%20a%20Terapia%20Speed!" class="btn btn-gold btn-sm" target="_blank">Agendar Terapia Speed</a>
+<!-- 01 -->
+<div class="card-ebook-capa" data-reveal data-delay="1">
+<img src="fotos/mulher-sem-autossabotagem.png" alt="Academy da Mulher Sem Autossabotagem">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">01 · Ebook</div>
+<h3>Academy da Mulher Sem Autossabotagem</h3>
+<p>Quebre os ciclos invisíveis que te impedem de avançar. Reconheça os padrões e transforme o que antes te bloqueava em combustível para crescer.</p>
+<a href="https://kiwify.app/uinsxSF" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
 </div>
 </div>
 
-<!-- 03 JORNADA INTEIRA -->
-<div class="processo-card" data-reveal data-delay="1">
-<img src="fotos/JORNADA%20INTEIRA%20foto%20nova.png" alt="Jornada I.N.T.E.I.R.A.">
-<div class="processo-card-body">
-<div class="processo-num">03 · Processo</div>
-<h3>Jornada I.N.T.E.I.R.A.</h3>
-<p>O processo completo de transformação: da Anamnese ao acompanhamento contínuo. Uma jornada integral de dentro para fora, para quem está pronta para a mudança definitiva.</p>
-<a href="https://wa.me/5511991400986?text=Ol%C3%A1%20Cecilia%2C%20quero%20iniciar%20a%20Jornada%20I.N.T.E.I.R.A.!" class="btn btn-gold btn-sm" target="_blank">Iniciar Jornada</a>
+<!-- 02 -->
+<div class="card-ebook-capa" data-reveal data-delay="2">
+<img src="fotos/vida-nao-e-sua.png" alt="A Vida que Não É Sua">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">02 · Ebook</div>
+<h3>A Vida que Não É Sua</h3>
+<p>Você está vivendo a vida dos outros? Descubra como retomar o controle da sua própria narrativa e encontrar o GPS de retorno para você mesma.</p>
+<a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
 </div>
 </div>
 
-<!-- 04 GPS INTERNO -->
-<div class="processo-card" data-reveal data-delay="2">
-<img src="fotos/DESPERTANDO%20GPS%20INTERNO%20foto%20nova.png" alt="Despertando o GPS Interno">
-<div class="processo-card-body">
-<span class="breve-badge">Em Breve</span>
-<div class="processo-num">04 · Processo</div>
-<h3>Despertando o GPS Interno</h3>
-<p>Ative seu sistema interno de orientação. Um processo profundo para reconectar com sua intuição, seus valores mais essenciais e o propósito que te move para o que realmente importa.</p>
-<span class="btn btn-outline btn-sm" style="opacity:0.5;cursor:default;">Em Breve</span>
+<!-- 03 -->
+<div class="card-ebook-capa" data-reveal data-delay="3">
+<img src="fotos/lei-atracao-assuncao.png" alt="Lei da Atração × Lei da Assunção">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">03 · Ebook</div>
+<h3>Lei da Atração × Lei da Assunção</h3>
+<p>Entenda a diferença entre manifestar e ser. A evolução do pensamento que transforma sua relação com o desejo e a realidade que você cria.</p>
+<a href="https://pay.kiwify.com.br/mD9pJdm" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 04 -->
+<div class="card-ebook-capa" data-reveal data-delay="1">
+<img src="fotos/manual-mulher-lider.png" alt="Manual da Mulher Líder de Si Mesma">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">04 · Ebook</div>
+<h3>Manual da Mulher Líder de Si Mesma</h3>
+<p>Liderança começa de dentro. Ferramentas práticas para assumir o comando da sua vida, emoções e decisões com clareza e segurança.</p>
+<a href="https://pay.kiwify.com.br/Ca6tm3o" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 05 -->
+<div class="card-ebook-capa" data-reveal data-delay="2">
+<img src="fotos/trauma-cura.png" alt="Do Trauma à Cura">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">05 · Ebook</div>
+<h3>Do Trauma à Cura, a Trilha de Reconstrução</h3>
+<p>Um mapa para atravessar as feridas do passado e construir uma nova versão de si mesma, com raízes mais profundas e presença mais plena.</p>
+<a href="https://pay.kiwify.com.br/OCLHEOK" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 06 -->
+<div class="card-ebook-capa" data-reveal data-delay="3">
+<img src="fotos/despertando-riqueza.png" alt="Despertando a Riqueza Interna">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">06 · Ebook</div>
+<h3>Despertando a Riqueza Interna</h3>
+<p>A riqueza que você busca já está em você. Metodologia para identificar e ativar seus recursos internos mais valiosos e construir abundância real.</p>
+<a href="https://pay.kiwify.com.br/cxrADBJ" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 07 -->
+<div class="card-ebook-capa" data-reveal data-delay="1">
+<img src="fotos/gerenciar-conflitos.png" alt="Como Gerenciar Conflitos Afinando a Comunicação">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">07 · Ebook</div>
+<h3>Como Gerenciar Conflitos Afinando a Comunicação</h3>
+<p>Transforme conflitos em pontes. Aprenda a se comunicar de forma assertiva sem perder a essência, construindo relações mais saudáveis e verdadeiras.</p>
+<a href="https://pay.kiwify.com.br/H4TJtPH" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 08 -->
+<div class="card-ebook-capa" data-reveal data-delay="2">
+<img src="fotos/reinvencao-40.png" alt="Manual de Reinvenção 40+">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">08 · Ebook</div>
+<h3>Manual de Reinvenção 40+</h3>
+<p>A segunda fase é sua. Um guia prático para se reinventar com propósito, coragem e clareza depois dos 40. O melhor ainda está à frente.</p>
+<a href="https://pay.kiwify.com.br/UccJaLG" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 09 -->
+<div class="card-ebook-capa" data-reveal data-delay="3">
+<img src="fotos/porta-chave.png" alt="Transforme Ciclos Viciosos em Virtuosos">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">09 · Ebook</div>
+<h3>Transforme Ciclos Viciosos em Virtuosos</h3>
+<p>Identifique os padrões que se repetem na sua vida e aprenda a criar novos ciclos que trabalham a seu favor em vez de contra você.</p>
+<a href="https://pay.kiwify.com.br/rHU5gEv" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="card-ebook-capa" data-reveal data-delay="1">
+<img src="fotos/equacao-emocional.png" alt="Manual da Equação Emocional">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">10 · Ebook</div>
+<h3>Manual da Equação Emocional</h3>
+<p>A fórmula para equilibrar razão e emoção em cada decisão da sua vida pessoal e profissional. Inteligência emocional aplicada com precisão.</p>
+<a href="https://pay.kiwify.com.br/MRH04yx" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="card-ebook-capa" data-reveal data-delay="2">
+<img src="fotos/MASCARA%20DOURADA.png" alt="Na Coragem de Reconhecer Quem Você É">
+<div class="card-ebook-capa-body">
+<div class="card-produto-tag">11 · Ebook</div>
+<h3>Na Coragem de Reconhecer Quem Você É Está a Sua Força</h3>
+<p>Autoconhecimento como ato de coragem. O guia para encarar sua essência com honestidade e transformar quem você realmente é em sua maior potência.</p>
+<a href="https://pay.kiwify.com.br/bngjFVv" class="btn btn-gold btn-sm" target="_blank">Adquirir Agora</a>
 </div>
 </div>
 
 </div>
-</section>
+</div>
 
-<section class="sec-cta" data-reveal>
-<div class="sec-tag" style="justify-content:center;margin-bottom:14px">Próximo Passo</div>
-<h2 class="sec-titulo">Não sabe por onde<br><em>começar?</em></h2>
-<p class="sec-sub">Fale com a Cecilia e descubra qual processo é o mais indicado para o momento que você está vivendo agora.</p>
-<div class="btns-cta" style="margin-top:40px">
-<a href="https://wa.me/5511991400986?text=Ol%C3%A1%20Cecilia%2C%20quero%20entender%20qual%20processo%20%C3%A9%20ideal%20para%20mim!" class="btn btn-gold" target="_blank">Falar com a Cecilia</a>
+<div style="max-width:var(--max);margin:64px auto 0;text-align:center;padding:0 0 80px" data-reveal>
+<div class="sec-tag" style="justify-content:center;margin-bottom:14px">Não sabe por onde começar?</div>
+<h2 class="sec-titulo">Fale com a Cecilia e<br><em>encontre seu ebook</em></h2>
+<p class="sec-sub" style="margin:16px auto 36px;max-width:480px">Cada ebook foi criado para um momento específico de vida. Converse com a Cecilia e descubra qual é o certo para você agora.</p>
+<div class="btns-cta">
+<a href="https://wa.me/5511991400986?text=Olá%20Cecilia%2C%20quero%20saber%20qual%20ebook%20é%20ideal%20para%20mim!" class="btn btn-gold" target="_blank">Quero Indicação Personalizada</a>
+<a href="processos.html" class="btn btn-outline">Ver os Processos</a>
+</div>
 </div>
 </section>
 
 <footer class="footer">
-<div class="footer-inner">
-<p class="footer-marca">Cecilia Baptista</p>
-<p class="footer-sub">Gestão do Eu · Transformação que dura</p>
-<nav class="footer-nav">
-<a href="index.html">Início</a>
-<a href="mentoria.html">Mentoria</a>
-<a href="ebooks.html">E-books</a>
-<a href="processos.html">Processos</a>
-<a href="palestra.html">Palestra</a>
-</nav>
+<div class="footer-grid">
+<div>
+<div class="footer-nome">Cecilia Baptista</div>
+<div class="footer-sub-marca">Gestão do Eu · gestaodoeu.com.br</div>
+<p class="footer-bio">Mentora e treinadora especialista em Inteligência Emocional, PNL e Gestão das Emoções.</p>
+<div class="footer-social">
+<a href="https://instagram.com/ceciliabaptistaonl1" target="_blank">IG</a>
+<a href="https://tiktok.com/@cecilia.baptista1" target="_blank">TT</a>
+<a href="https://wa.me/5511991400986" target="_blank">WA</a>
+</div>
+</div>
+<div class="footer-col"><h5>Serviços</h5><ul><li><a href="mentoria.html">Mentoria</a></li><li><a href="ebooks.html">E-books</a></li><li><a href="processos.html">Processos</a></li><li><a href="palestra.html">Palestra</a></li></ul></div>
+<div class="footer-col"><h5>E-books</h5><ul><li><a href="https://pay.kiwify.com.br/UccJaLG" target="_blank">Reinvenção 40+</a></li><li><a href="https://kiwify.app/uinsxSF" target="_blank">Academy Autossabotagem</a></li><li><a href="https://pay.kiwify.com.br/OCLHEOK" target="_blank">Do Trauma à Cura</a></li><li><a href="https://pay.kiwify.com.br/MRH04yx" target="_blank">Equação Emocional</a></li></ul></div>
+<div class="footer-col"><h5>Contato</h5><div class="footer-contato"><strong>WhatsApp</strong><a href="https://wa.me/5511991400986" target="_blank">(11) 99140-0986</a><br><br><strong>E-mail</strong><a href="mailto:gestaodoeu26@gmail.com">gestaodoeu26@gmail.com</a></div></div>
+</div>
+<div class="footer-copy">
+<p>© 2026 Cecilia Baptista · gestaodoeu.com.br · Todos os direitos reservados</p>
+<p>Gestão do Eu · Inteligência Emocional · Reinvenção 40+</p>
 </div>
 </footer>
 
 <script>
-const toggle = document.getElementById('toggle');
-const menu = document.querySelector('.nav-menu');
-if (toggle) toggle.addEventListener('click', () => { toggle.classList.toggle('aberto'); menu.classList.toggle('aberto'); });
-document.querySelectorAll('.nav-menu a').forEach(a => a.addEventListener('click', () => { toggle.classList.remove('aberto'); menu.classList.remove('aberto'); }));
-const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.08 });
-document.querySelectorAll('[data-reveal]').forEach(el => obs.observe(el));
+const toggle=document.getElementById('toggle');
+const menu=document.querySelector('.nav-menu');
+if(toggle)toggle.addEventListener('click',()=>{toggle.classList.toggle('aberto');menu.classList.toggle('aberto');});
+document.querySelectorAll('.nav-menu a').forEach(a=>a.addEventListener('click',()=>{toggle.classList.remove('aberto');menu.classList.remove('aberto');}));
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),d*120);obs.unobserve(e.target);}});},{threshold:0.08});
+document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
