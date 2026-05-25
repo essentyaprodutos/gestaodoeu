@@ -15,8 +15,8 @@
 .metod-list li:last-child{border-bottom:none}
 .metod-list li::before{content:'›';color:var(--dourado);font-size:1.1rem;flex-shrink:0}
 .card-produto{position:relative;overflow:hidden;min-height:440px;display:flex;flex-direction:column}
-.card-produto-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(0.72) saturate(0.88);transition:filter .4s,transform .4s}
-.card-produto:hover .card-produto-bg{filter:brightness(0.72) saturate(1);transform:scale(1.03)}
+.card-produto-bg{position:absolute;inset:0;background-size:cover;background-position:center center;filter:brightness(0.65) saturate(0.88);transition:filter .4s,transform .4s}
+.card-produto:hover .card-produto-bg{filter:brightness(0.82) saturate(1);transform:scale(1.03)}
 .card-produto-body{position:relative;z-index:2;margin-top:auto;padding:32px;background:linear-gradient(to top,rgba(0,0,0,0.92) 60%,transparent)}
 .depoimentos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3px;max-width:var(--max);margin:0 auto}
 .depoimento-card{background:var(--carvao);padding:36px;border-top:2px solid rgba(176,144,72,0.12)}
@@ -79,24 +79,20 @@
 <div class="grid-produtos">
 
 <div class="card-produto" data-reveal data-delay="1">
-<div class="card-produto-bg" style="background-image:url('fotos/DESPERTANDO GPS INTERNO foto nova.png');background-size:contain;background-position:center center;background-repeat:no-repeat;filter:brightness(0.88) saturate(1)"></div>
+<div class="card-produto-bg" style="background-image:url('fotos/GPS EMOCIONAL 1 foto nova.jpeg');background-position:center center"></div>
 <div class="card-produto-body">
-<span class="breve-badge">Em Breve</span>
 <div class="card-produto-tag">01 · Mentoria</div>
 <h3>GPS Emocional</h3>
 <p>Sua rota emocional mapeada com precisão. Um acompanhamento individualizado para você saber exatamente onde está, o que sente e para onde quer ir. Clareza de rota para a segunda fase.</p>
-<span class="btn btn-breve">Em Breve</span>
 </div>
 </div>
 
 <div class="card-produto" data-reveal data-delay="2">
-<div class="card-produto-bg" style="background-image:url('fotos/MENTORIA INTEIRA foto nova.png');background-position:center 25%"></div>
+<div class="card-produto-bg" style="background-image:url('fotos/MENTORIA INTEIRA foto nova.png');background-position:center 20%"></div>
 <div class="card-produto-body">
-<span class="breve-badge">Em Breve</span>
 <div class="card-produto-tag">02 · Mentoria</div>
 <h3>I.N.T.E.I.R.A</h3>
 <p>Identidade, Narrativa, Transformação, Emoção, Inteligência, Reinvenção e Ação. Metodologia revolucionária para mulheres que querem viver sem fragmentos e se tornarem inteiras de verdade.</p>
-<span class="btn btn-breve">Em Breve</span>
 </div>
 </div>
 
@@ -154,9 +150,9 @@
 <section class="sec-cta" data-reveal>
 <div class="sec-tag" style="justify-content:center;margin-bottom:14px">Próximo Passo</div>
 <h2 class="sec-titulo">Pronta para ser<br><em>mentorada?</em></h2>
-<p class="sec-sub">Fale com a Cecilia e descubra qual programa é o certo para o seu momento. Uma conversa pode mudar o rumo da sua vida.</p>
+<p class="sec-sub">Fale com a Cecilia e descubra qual programa é o certo para o seu momento.</p>
 <div class="btns-cta" style="margin-top:40px">
-<a href="https://wa.me/5511991400986?text=Olá%20Cecilia%2C%20tenho%20interesse%20em%20uma%20mentoria!%20Pode%20me%20contar%20mais?" class="btn btn-gold" target="_blank">Falar com a Cecilia</a>
+<a href="https://wa.me/5511991400986?text=Olá%20Cecilia%2C%20tenho%20interesse%20em%20uma%20mentoria!" class="btn btn-gold" target="_blank">Falar com a Cecilia</a>
 <a href="processos.html" class="btn btn-outline">Ver os Processos</a>
 </div>
 </section>
@@ -166,7 +162,7 @@
 <div>
 <div class="footer-nome">Cecilia Baptista</div>
 <div class="footer-sub-marca">Gestão do Eu · gestaodoeu.com.br</div>
-<p class="footer-bio">Mentora e treinadora especialista em Inteligência Emocional, PNL e Gestão das Emoções. Metodologia própria para a sua reinvenção.</p>
+<p class="footer-bio">Mentora e treinadora especialista em Inteligência Emocional, PNL e Gestão das Emoções.</p>
 <div class="footer-social">
 <a href="https://instagram.com/ceciliabaptistaonl1" target="_blank">IG</a>
 <a href="https://tiktok.com/@cecilia.baptista1" target="_blank">TT</a>
@@ -182,7 +178,6 @@
 <p>Gestão do Eu · Inteligência Emocional · Reinvenção 40+</p>
 </div>
 </footer>
-
 <script>
 const toggle=document.getElementById('toggle');
 const menu=document.querySelector('.nav-menu');
