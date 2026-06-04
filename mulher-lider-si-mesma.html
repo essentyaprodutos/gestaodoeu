@@ -22,12 +22,12 @@ html{scroll-behavior:smooth;}
 body{background:var(--navy);color:var(--white);font-family:'Raleway',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
 .strip{background:linear-gradient(90deg,var(--navy-mid),#1e3a5f,var(--navy-mid));border-bottom:1px solid rgba(200,169,110,.3);text-align:center;padding:.75rem 1rem;font-size:.8rem;font-weight:400;letter-spacing:.14em;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);}
 .hero{background:var(--navy);display:flex;align-items:center;min-height:80vh;padding:7rem 4rem 5rem;}
-.hero-body{max-width:640px;}
+.hero-body{max-width:820px;}
 .hero-eyebrow{font-size:.72rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--silver-light);display:block;margin-bottom:.5rem;font-family:'Cormorant Garamond',serif;font-style:italic;}
 .hero-institute{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:2rem;}
-.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.05;margin-bottom:1.8rem;}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,4.2rem);font-weight:300;line-height:1.1;margin-bottom:1.8rem;}
 .hero-title em{font-style:italic;color:var(--silver-light);}
-.hero-sub{font-size:1.05rem;color:rgba(248,250,252,.90);line-height:1.9;margin-bottom:3rem;max-width:480px;}
+.hero-sub{font-size:1.05rem;color:rgba(248,250,252,.90);line-height:1.9;margin-bottom:3rem;max-width:580px;}
 .btn-outline{display:inline-block;background:transparent;color:var(--white);border:1px solid var(--silver);font-family:'Raleway',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:1.1rem 2.8rem;transition:all .35s;position:relative;overflow:hidden;}
 .btn-outline::before{content:'';position:absolute;inset:0;background:var(--silver);transform:translateX(-100%);transition:transform .35s ease;z-index:0;}
 .btn-outline:hover::before{transform:translateX(0);}
@@ -113,7 +113,10 @@ footer a:hover{color:var(--white);}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 @media(max-width:768px){
-  .hero{padding:6rem 1.5rem 4rem;}
+  .hero{padding:5rem 1.5rem 3.5rem;}
+  .hero-body{max-width:100%;}
+  .hero-title{font-size:clamp(1.9rem,7vw,2.8rem);line-height:1.15;}
+  .hero-sub{font-size:.95rem;max-width:100%;}
   section{padding:4rem 1.5rem;}
   .ch-item{padding:1.4rem;gap:1rem;}
   .testim-card{padding:2rem 1.5rem;}
