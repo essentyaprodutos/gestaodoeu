@@ -14,10 +14,11 @@
 .metod-list li{display:flex;align-items:flex-start;gap:14px;font-size:0.88rem;color:rgba(250,250,248,0.55);margin-bottom:14px;line-height:1.6;padding-bottom:14px;border-bottom:1px solid rgba(176,144,72,0.08)}
 .metod-list li:last-child{border-bottom:none}
 .metod-list li::before{content:'›';color:var(--dourado);font-size:1.1rem;flex-shrink:0}
-.card-produto{position:relative;overflow:hidden;min-height:440px;display:flex;flex-direction:column}
-.card-produto-bg{position:absolute;inset:0;background-size:cover;background-position:center center;filter:brightness(0.65) saturate(0.88);transition:filter .4s,transform .4s}
-.card-produto:hover .card-produto-bg{filter:brightness(0.82) saturate(1);transform:scale(1.03)}
-.card-produto-body{position:relative;z-index:2;margin-top:auto;padding:32px;background:linear-gradient(to top,rgba(0,0,0,0.92) 60%,transparent)}
+.card-produto{background:var(--carvao);border-top:2px solid rgba(176,144,72,0.15);position:relative;overflow:hidden;display:flex;flex-direction:column;transition:background .3s,border-color .3s}
+.card-produto:hover{background:#191919;border-top-color:rgba(176,144,72,0.55)}
+.card-produto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center center;display:block;filter:brightness(0.95) saturate(1);transition:filter .3s,transform .4s}
+.card-produto:hover img{filter:brightness(1) saturate(1.05);transform:scale(1.02)}
+.card-produto-body{padding:28px 28px 32px;flex:1;display:flex;flex-direction:column}
 .depoimentos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3px;max-width:var(--max);margin:0 auto}
 .depoimento-card{background:var(--carvao);padding:36px;border-top:2px solid rgba(176,144,72,0.12)}
 .depoimento-card blockquote{font-family:var(--serif);font-size:0.95rem;font-style:italic;color:rgba(250,250,248,0.7);line-height:1.75;margin-bottom:20px}
@@ -79,7 +80,7 @@
 <div class="grid-produtos">
 
 <div class="card-produto" data-reveal data-delay="1">
-<div class="card-produto-bg" style="background-image:url('fotos/GPS EMOCIONAL 1 foto nova.jpeg');background-position:center center"></div>
+<img src="fotos/GPS EMOCIONAL MENTORIAS.jpg" alt="GPS Emocional">
 <div class="card-produto-body">
 <div class="card-produto-tag">01 · Mentoria</div>
 <h3>GPS Emocional</h3>
@@ -89,16 +90,17 @@
 </div>
 
 <div class="card-produto" data-reveal data-delay="2">
-<div class="card-produto-bg" style="background-image:url('fotos/MENTORIA INTEIRA foto nova.png');background-position:center 65%"></div>
+<img src="fotos/MENTORIA INTEIRA foto nova.png" alt="I.N.T.E.I.R.A">
 <div class="card-produto-body">
 <div class="card-produto-tag">02 · Mentoria</div>
 <h3>I.N.T.E.I.R.A</h3>
 <p>Identidade, Narrativa, Transformação, Emoção, Inteligência, Reinvenção e Ação. Metodologia revolucionária para mulheres que querem viver sem fragmentos e se tornarem inteiras de verdade.</p>
+<a href="https://wa.me/5511991400986?text=Olá%20Cecilia%2C%20quero%20informações%20sobre%20a%20Mentoria%20I.N.T.E.I.R.A!" class="btn btn-gold" target="_blank">Quero Informações</a>
 </div>
 </div>
 
 <div class="card-produto" data-reveal data-delay="1">
-<div class="card-produto-bg" style="background-image:url('fotos/PRODUTIVIDADE EM CONEXAO')"></div>
+<img src="fotos/PRODUTIVIDADE EM CONEXAO" alt="Produtividade em Conexão">
 <div class="card-produto-body">
 <div class="card-produto-tag">03 · Mentoria</div>
 <h3>Produtividade em Conexão</h3>
@@ -108,12 +110,12 @@
 </div>
 
 <div class="card-produto" data-reveal data-delay="2">
-<div class="card-produto-bg" style="background-image:url('fotos/Processo de Desenvolvimento.jpg')"></div>
+<img src="fotos/Processo de Desenvolvimento.jpg" alt="Processo de Desenvolvimento">
 <div class="card-produto-body">
 <div class="card-produto-tag">04 · Mentoria</div>
 <h3>Processo de Desenvolvimento</h3>
 <p>Mentoria individual completa de desenvolvimento pessoal e profissional. Metodologia própria combinando PNL, Psicologia Positiva e Anamnese Emocional para romper limites reais.</p>
-<a href="https://wa.me/5511991400986?text=Olá%20Cecilia%2C%20quero%20informações%20sobre%20a%20Mentoria%20I.N.T.E.I.R.A!" class="btn btn-gold" target="_blank">Quero Informações</a>
+<a href="https://pay.kiwify.com.br/32AuxJ3" class="btn btn-gold" target="_blank">Iniciar o Processo</a>
 </div>
 </div>
 
