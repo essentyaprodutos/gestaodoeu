@@ -193,6 +193,12 @@
 
     /* ── SERVIÇOS GRID ─────────────────────────── */
     .servicos-wrap { max-width: var(--max); margin: 0 auto; }
+    .card-servico{background:var(--carvao);border-top:2px solid rgba(176,144,72,0.15);position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:0;padding:0;justify-content:flex-start;transition:background .3s,border-color .3s,transform .35s var(--ease)}
+    .card-servico:hover{background:#191919;border-top-color:rgba(176,144,72,0.55);transform:scale(1.01)}
+    .card-servico img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center center;display:block;filter:brightness(0.95) saturate(1);transition:filter .3s,transform .4s}
+    .card-servico:hover img{filter:brightness(1) saturate(1.05);transform:scale(1.02)}
+    .card-servico::before{content:none}
+    .card-servico-body{position:relative;z-index:2;padding:28px 28px 32px}
 
     /* ── DEPOIMENTOS ───────────────────────────── */
     .dep-wrap { max-width: var(--max); margin: 0 auto; }
@@ -384,7 +390,7 @@
     <div class="grid-servicos" data-reveal>
       <!-- MENTORIA -->
       <a href="mentoria.html" class="card-servico">
-        <div class="card-servico-bg" style="background-image:url('Gaiola dourada com mulher.jpg')"></div>
+        <img src="Gaiola dourada com mulher.jpg" alt="Mentoria">
         <div class="card-servico-body">
           <div class="card-servico-num">01 · Serviço</div>
           <h3>Mentoria</h3>
@@ -394,7 +400,7 @@
       </a>
       <!-- EBOOKS -->
       <a href="ebooks.html" class="card-servico">
-        <div class="card-servico-bg" style="background-image:url('fotos/MAPA.png')"></div>
+        <img src="fotos/MAPA.png" alt="Ebooks">
         <div class="card-servico-body">
           <div class="card-servico-num">02 · Serviço</div>
           <h3>Ebooks</h3>
@@ -404,7 +410,7 @@
       </a>
       <!-- PROCESSOS -->
       <a href="processos.html" class="card-servico">
-        <div class="card-servico-bg" style="background-image:url('fotos/CHAVE NA PORTA.png')"></div>
+        <img src="fotos/CHAVE NA PORTA.png" alt="Processos">
         <div class="card-servico-body">
           <div class="card-servico-num">03 · Serviço</div>
           <h3>Processos</h3>
@@ -414,7 +420,7 @@
       </a>
       <!-- PALESTRA -->
       <a href="palestra.html" class="card-servico">
-        <div class="card-servico-bg" style="background-image:url('fotos/PALESTRA foto nova.png')"></div>
+        <img src="fotos/PALESTRA foto nova.png" alt="Palestra">
         <div class="card-servico-body">
           <div class="card-servico-num">04 · Serviço</div>
           <h3>Palestra</h3>
