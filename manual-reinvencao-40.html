@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Vida que Não É Sua · Essentya Desenvolvimento</title>
+<meta name="description" content="Você tem vivido a vida dos outros. Este guia mostra o caminho de volta para você mesma.">
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -9,45 +13,34 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2026621662073503');
-fbq('track', 'PageView');
+fbq('init','2026621662073503');
+fbq('track','PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2026621662073503&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manual de Reinvenção 40+ · Essentya Desenvolvimento</title>
+src="https://www.facebook.com/tr?id=2026621662073503&ev=PageView&noscript=1"/></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --gold:#c8a96e; --black:#0a0a0a; --bsoft:#141414; --bcard:#1a1a1a;
-  --nude:#f5ede3; --white:#fafaf8; --muted:#888;
+  --gold:#c8a96e;--black:#0a0a0a;--bsoft:#141414;--bcard:#1a1a1a;
+  --nude:#f5ede3;--white:#fafaf8;--muted:#888;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:var(--black);color:var(--white);font-family:'Raleway',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
-
-/* STRIP */
 .strip{background:var(--gold);text-align:center;padding:.55rem 1rem;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#000;}
-
-/* HERO */
-.hero{position:relative;display:flex;align-items:center;justify-content:flex-start;overflow:hidden;min-height:100vh;}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block;}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.90) 40%,rgba(10,10,10,.30) 100%);}
+.hero{position:relative;display:flex;align-items:center;min-height:100vh;overflow:hidden;}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.92) 45%,rgba(10,10,10,.35) 100%);}
 .hero-body{position:relative;z-index:2;padding:7rem 4rem 5rem;max-width:640px;}
 .hero-eyebrow{font-size:.67rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:2rem;}
-.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,5.2vw,3.4rem);font-weight:300;line-height:1.25;margin-bottom:1.8rem;white-space:nowrap;}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:1.1;margin-bottom:1.8rem;}
 .hero-title em{font-style:italic;color:var(--gold);}
 .hero-sub{font-size:1rem;color:rgba(250,250,248,.72);line-height:1.9;margin-bottom:3rem;max-width:480px;}
 .btn{display:inline-block;background:var(--gold);color:#000;font-family:'Raleway',sans-serif;font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:1.1rem 2.8rem;transition:all .3s;}
 .btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(200,169,110,.35);}
-
-/* SECTIONS */
 section{padding:5rem 2rem;}
 .wrap{max-width:900px;margin:0 auto;}
 .wrap-wide{max-width:1100px;margin:0 auto;}
@@ -56,15 +49,331 @@ section{padding:5rem 2rem;}
 .stitle em{font-style:italic;color:var(--gold);}
 .sintro{text-align:center;color:rgba(250,250,248,.62);max-width:540px;margin:0 auto 3.5rem;font-size:.95rem;line-height:1.9;}
 .gold-rule{width:48px;height:1px;background:var(--gold);margin:.6rem auto 0;}
-
-/* BOOK SECTION */
 .book-section{background:var(--bsoft);border-top:1px solid rgba(200,169,110,.15);border-bottom:1px solid rgba(200,169,110,.15);}
 .book-inner{display:flex;align-items:center;gap:5rem;flex-wrap:wrap;max-width:1060px;margin:0 auto;}
 .book-img-wrap{flex-shrink:0;position:relative;}
-.book-img-wrap img{width:clamp(220px,28vw,320px);height:auto;display:block;position:relative;z-index:1;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+.book-img-wrap img{width:clamp(220px,28vw,300px);height:auto;display:block;position:relative;z-index:1;box-shadow:0 20px 60px rgba(0,0,0,.5);}
 .book-img-wrap::before{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:1px solid rgba(200,169,110,.35);z-index:0;}
 .book-text{flex:1;min-width:280px;}
-.book-text .blabel{font-size:.67rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1.2rem;}
 .book-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;line-height:1.2;margin-bottom:1.4rem;}
 .book-text h2 em{font-style:italic;color:var(--gold);}
-.book-text p{font-size:.94rem;color:
+.book-text p{font-size:.94rem;color:rgba(250,250,248,.7);line-height:1.9;margin-bottom:1rem;}
+.recog-section{background:var(--black);}
+.recog-list{max-width:680px;margin:3rem auto 0;}
+.recog-item{padding:1.8rem 2.5rem;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:flex-start;gap:1.5rem;}
+.recog-item:last-child{border-bottom:none;}
+.recog-dash{color:var(--gold);font-size:1.2rem;flex-shrink:0;}
+.recog-text{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--nude);line-height:1.65;}
+.what-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;margin-top:3rem;}
+.what-card{background:var(--bcard);padding:2.5rem 2rem;border-left:2px solid transparent;transition:border-color .3s;}
+.what-card:hover{border-left-color:var(--gold);}
+.what-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:rgba(200,169,110,.18);line-height:1;margin-bottom:.8rem;}
+.what-card h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--nude);margin-bottom:.6rem;}
+.what-card p{font-size:.86rem;color:rgba(250,250,248,.52);line-height:1.8;}
+.mid-cta{background:rgba(200,169,110,.05);border-top:1px solid rgba(200,169,110,.2);border-bottom:1px solid rgba(200,169,110,.2);text-align:center;padding:4rem 2rem;}
+.mid-cta .pname{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;color:var(--nude);margin-bottom:.4rem;}
+.mid-cta .pval{font-family:'Cormorant Garamond',serif;font-size:3.8rem;font-weight:300;color:var(--gold);line-height:1;}
+.mid-cta .pval sup{font-size:1.3rem;font-family:'Raleway',sans-serif;font-weight:300;vertical-align:super;}
+.mid-cta .pnote{font-size:.76rem;color:rgba(250,250,248,.4);margin:.4rem 0 2rem;}
+.chapters-section{background:var(--bsoft);}
+.chapter-list{border:1px solid rgba(200,169,110,.2);margin-top:3rem;}
+.ch-item{display:flex;gap:1.8rem;padding:1.8rem 2.5rem;border-bottom:1px solid rgba(200,169,110,.08);transition:background .25s;align-items:flex-start;}
+.ch-item:last-child{border-bottom:none;}
+.ch-item:hover{background:rgba(200,169,110,.04);}
+.ch-num{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:rgba(200,169,110,.35);line-height:1;flex-shrink:0;min-width:40px;}
+.ch-body h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--nude);margin-bottom:.3rem;}
+.ch-body p{font-size:.84rem;color:rgba(250,250,248,.5);line-height:1.75;}
+.for-section{background:var(--black);}
+.for-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem;}
+@media(max-width:640px){.for-grid{grid-template-columns:1fr;}}
+.for-card{padding:2rem;border:1px solid rgba(200,169,110,.18);background:var(--bcard);}
+.for-card.yes{border-left:3px solid var(--gold);}
+.for-card.no{border-left:3px solid rgba(255,255,255,.1);opacity:.6;}
+.for-card .flabel{font-size:.63rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:1rem;}
+.for-card.yes .flabel{color:var(--gold);}
+.for-card.no .flabel{color:var(--muted);}
+.for-card ul{list-style:none;display:flex;flex-direction:column;gap:.7rem;}
+.for-card ul li{font-size:.88rem;color:rgba(250,250,248,.7);padding-left:1.2rem;position:relative;line-height:1.6;}
+.for-card ul li::before{content:'—';position:absolute;left:0;color:var(--gold);font-size:.72rem;}
+.for-card.no ul li::before{color:var(--muted);}
+.testim-section{background:var(--bsoft);}
+.testim-card{background:var(--black);border:1px solid rgba(200,169,110,.18);padding:3rem 3.5rem;max-width:700px;margin:2rem auto 0;position:relative;}
+.testim-card::before{content:'"';font-family:'Cormorant Garamond',serif;font-size:7rem;color:rgba(200,169,110,.12);position:absolute;top:-.8rem;left:1.8rem;line-height:1;}
+.testim-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;font-weight:300;line-height:1.75;color:var(--nude);position:relative;z-index:1;margin-bottom:1.8rem;}
+.testim-author{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);}
+.about-section{background:var(--black);}
+.about-box{max-width:860px;margin:3rem auto 0;border:1px solid rgba(200,169,110,.2);padding:3rem;background:var(--bcard);position:relative;}
+.about-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.about-box h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;font-style:italic;margin-bottom:1.5rem;color:var(--nude);}
+.about-box p{font-size:.93rem;color:rgba(250,250,248,.68);line-height:1.95;margin-bottom:1rem;}
+.about-pillars{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem;padding-top:1.8rem;border-top:1px solid rgba(200,169,110,.18);}
+.pillar{font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding:.4rem .9rem;border:1px solid rgba(200,169,110,.3);}
+.guarantee-section{background:rgba(200,169,110,.04);border-top:1px solid rgba(200,169,110,.12);text-align:center;}
+.g-ring{width:96px;height:96px;border:1px solid var(--gold);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 2rem;}
+.g-ring .gdays{font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:300;color:var(--gold);line-height:1;}
+.g-ring .glabel{font-size:.52rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);}
+.price-section{background:var(--black);text-align:center;}
+.price-card{max-width:440px;margin:3rem auto 0;border:1px solid rgba(200,169,110,.32);padding:3.5rem 2.5rem;background:var(--bcard);position:relative;}
+.price-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.price-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-style:italic;color:var(--nude);margin-bottom:1.8rem;}
+.price-val{font-family:'Cormorant Garamond',serif;font-size:4.2rem;font-weight:300;color:var(--gold);line-height:1;}
+.price-curr{font-size:1.3rem;vertical-align:super;font-family:'Raleway',sans-serif;font-weight:300;}
+.price-sub{font-size:.76rem;color:rgba(250,250,248,.4);margin:.4rem 0 2rem;}
+.price-includes{list-style:none;margin-bottom:2.5rem;text-align:left;display:flex;flex-direction:column;gap:.65rem;}
+.price-includes li{font-size:.87rem;color:rgba(250,250,248,.65);padding-left:1.4rem;position:relative;line-height:1.5;}
+.price-includes li::before{content:'✓';position:absolute;left:0;color:var(--gold);font-size:.7rem;}
+.final-section{background:var(--bsoft);text-align:center;padding:7rem 2rem;border-top:1px solid rgba(200,169,110,.12);}
+.final-section blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3.2vw,2.2rem);font-style:italic;font-weight:300;color:var(--nude);max-width:680px;margin:0 auto 1rem;line-height:1.5;}
+.final-section cite{font-size:.72rem;font-style:normal;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:3rem;}
+footer{background:var(--black);border-top:1px solid rgba(200,169,110,.12);padding:2rem;text-align:center;font-size:.7rem;color:rgba(250,250,248,.28);letter-spacing:.07em;}
+footer a{color:var(--gold);text-decoration:none;}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+@media(max-width:768px){
+  .hero-body{padding:6rem 1.5rem 4rem;}
+  .book-inner{flex-direction:column;gap:2.5rem;align-items:center;text-align:center;}
+  section{padding:4rem 1.5rem;}
+  .ch-item{padding:1.4rem;gap:1rem;}
+  .testim-card{padding:2rem 1.5rem;}
+  .about-box{padding:2rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="strip">Acesso imediato após confirmação do pagamento</div>
+
+<section class="hero">
+  <img class="hero-img" src="avida-foto1_1.jpg" alt="A Vida que Não É Sua">
+  <div class="hero-shade"></div>
+  <div class="hero-body">
+    <span class="hero-eyebrow">Essentya Desenvolvimento</span>
+    <h1 class="hero-title">
+      Você sabe, lá no fundo,<br>que essa vida<br><em>não é sua.</em>
+    </h1>
+    <p class="hero-sub">
+      Há anos você organiza, cuida, atende, entrega. Construiu uma vida inteira — para todos, menos para você. 
+      Este guia é o caminho de volta para a mulher que ficou esperando.
+    </p>
+    <a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn" target="_blank" rel="noopener"
+       onclick="fbq('track','InitiateCheckout');">
+      Quero de Volta a Minha Vida
+    </a>
+  </div>
+</section>
+
+<section style="background:var(--black);padding:4rem 2rem;text-align:center;border-bottom:1px solid rgba(200,169,110,.12);">
+  <div style="max-width:420px;margin:0 auto;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+    <video controls playsinline poster="a-vida-que-nao-e-sua-poster.jpg" style="width:100%;display:block;">
+      <source src="a-vida-que-nao-e-sua-web (3).mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<div class="book-section">
+  <div class="book-inner reveal" style="padding:5rem 2rem;">
+    <div class="book-img-wrap">
+      <img src="avida-foto2_1_1.jpg" alt="A Vida que Não É Sua">
+    </div>
+    <div class="book-text">
+      <span class="slabel" style="text-align:left;">O Guia</span>
+      <h2><em>A Vida que Não É Sua</em></h2>
+      <p>Existe um padrão silencioso que muitas mulheres carregam por décadas: o hábito de se colocar em último lugar. De dizer sim quando queriam dizer não. De viver em função das expectativas dos outros até não saber mais quais são as suas.</p>
+      <p>Este guia não é sobre culpa — é sobre reconhecimento. E sobre a decisão, que só você pode tomar, de voltar para si mesma.</p>
+    </div>
+  </div>
+</div>
+
+<section class="recog-section">
+  <div class="wrap reveal">
+    <span class="slabel">Você se reconhece?</span>
+    <h2 class="stitle">Quando a vida que você vive<br><em>não tem o seu nome</em></h2>
+    <div class="gold-rule"></div>
+    <div class="recog-list">
+      <div class="recog-item"><span class="recog-dash">—</span><p class="recog-text">Você diz "estou bem" quando não está, porque é mais fácil do que explicar o que sente.</p></div>
+      <div class="recog-item"><span class="recog-dash">—</span><p class="recog-text">Você coloca as necessidades dos outros antes das suas de forma tão automática que nem percebe mais quando isso acontece.</p></div>
+      <div class="recog-item"><span class="recog-dash">—</span><p class="recog-text">Você sente culpa quando tenta se colocar em primeiro lugar — como se cuidar de você fosse egoísmo.</p></div>
+      <div class="recog-item"><span class="recog-dash">—</span><p class="recog-text">Quando alguém pergunta "o que você quer?", você hesita. Faz tanto tempo que a resposta sumiu.</p></div>
+      <div class="recog-item"><span class="recog-dash">—</span><p class="recog-text">Você se sente exausta de uma forma que vai além do cansaço físico — é esgotamento de identidade.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--black);">
+  <div class="wrap-wide reveal">
+    <span class="slabel">O que este guia entrega</span>
+    <h2 class="stitle">Não é sobre recomeçar.<br><em>É sobre se reencontrar.</em></h2>
+    <div class="gold-rule"></div>
+    <div class="what-grid" style="margin-top:3rem;">
+      <div class="what-card"><div class="what-num">01</div><h3>O Diagnóstico Honesto</h3><p>Identificar com precisão em quais áreas da sua vida você desapareceu — e onde ainda existe um fio de você mesma esperando ser puxado.</p></div>
+      <div class="what-card"><div class="what-num">02</div><h3>A Origem do Padrão</h3><p>Compreender de onde vem o hábito de viver para os outros. Entender a raiz é o único caminho para sair dela sem culpa.</p></div>
+      <div class="what-card"><div class="what-num">03</div><h3>As Fronteiras que Libertam</h3><p>Aprender a dizer não sem culpa. Construir limites que não sejam muros — mas marcadores claros de onde você termina e o outro começa.</p></div>
+      <div class="what-card"><div class="what-num">04</div><h3>O Retorno a Si Mesma</h3><p>Ferramentas práticas para recuperar sua voz, seus desejos — e começar a tomar decisões que são genuinamente suas.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="mid-cta reveal">
+  <p class="pname">A Vida que Não É Sua</p>
+  <p class="pval"><sup>R$</sup>127</p>
+  <p class="pnote">Pagamento único · PDF com acesso vitalício</p>
+  <a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn" target="_blank" rel="noopener"
+     onclick="fbq('track','InitiateCheckout');">
+    Quero de Volta a Minha Vida — R$127
+  </a>
+</div>
+
+<section class="chapters-section">
+  <div class="wrap-wide reveal">
+    <span class="slabel">O que você vai percorrer</span>
+    <h2 class="stitle">Sete movimentos<br><em>de dentro para fora</em></h2>
+    <div class="gold-rule"></div>
+    <div class="chapter-list">
+      <div class="ch-item"><span class="ch-num">I</span><div class="ch-body"><h4>Reconhecendo a Vida que Você Tomou Emprestada</h4><p>O primeiro passo é ver com clareza. Um mapeamento honesto de quanto espaço você ocupa na sua própria vida.</p></div></div>
+      <div class="ch-item"><span class="ch-num">II</span><div class="ch-body"><h4>De Onde Veio o Hábito de Desaparecer</h4><p>As origens do padrão: família, cultura, relacionamentos, crenças formadas na infância que ainda operam em você décadas depois.</p></div></div>
+      <div class="ch-item"><span class="ch-num">III</span><div class="ch-body"><h4>A Culpa como Mecanismo de Controle</h4><p>Por que você sente culpa quando tenta ser você mesma — e como essa culpa foi construída. Mais importante: como desfazê-la.</p></div></div>
+      <div class="ch-item"><span class="ch-num">IV</span><div class="ch-body"><h4>Reencontrando o que É Genuinamente Seu</h4><p>Exercícios de reconexão com seus desejos reais, suas preferências esquecidas, sua voz interior que foi sendo abafada.</p></div></div>
+      <div class="ch-item"><span class="ch-num">V</span><div class="ch-body"><h4>Construindo Fronteiras com Integridade</h4><p>Como dizer não de forma que preserva o relacionamento e restaura você — ao mesmo tempo.</p></div></div>
+      <div class="ch-item"><span class="ch-num">VI</span><div class="ch-body"><h4>Comunicando Quem Você É Agora</h4><p>Como navegar a reação das pessoas ao seu redor quando você começa a mudar — sem ceder, sem se endurecer.</p></div></div>
+      <div class="ch-item"><span class="ch-num">VII</span><div class="ch-body"><h4>A Declaração de Retorno a Si Mesma</h4><p>O compromisso pessoal e intransferível com a mulher que você é — não a que os outros esperam. Você. Inteira. Presente.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="for-section">
+  <div class="wrap reveal">
+    <span class="slabel">Antes de decidir</span>
+    <h2 class="stitle">Para quem este guia<br><em>foi escrito</em></h2>
+    <div class="gold-rule"></div>
+    <div class="for-grid" style="margin-top:3rem;">
+      <div class="for-card yes">
+        <span class="flabel">Este guia é para você se...</span>
+        <ul>
+          <li>Você percebe que diz sim quando quer dizer não — e já não sabe mais quando isso começou</li>
+          <li>Sente que perdeu contato com quem você era antes de tantas responsabilidades</li>
+          <li>Está exausta de cuidar de todos e não tem energia para cuidar de si mesma</li>
+          <li>Quer se reconectar com seus próprios desejos e limites de forma real, não superficial</li>
+          <li>Sente que a vida que está vivendo foi construída para agradar os outros, não a si mesma</li>
+        </ul>
+      </div>
+      <div class="for-card no">
+        <span class="flabel">Este guia não é para você se...</span>
+        <ul>
+          <li>Você busca validação para continuar priorizando os outros sem questionar o padrão</li>
+          <li>Não está disposta a olhar com honestidade para o que cedeu e deixou para trás</li>
+          <li>Prefere soluções rápidas sem trabalho interno real</li>
+          <li>Acredita que cuidar de si mesma é egoísmo e não está pronta para revisitar essa crença</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testim-section">
+  <div class="wrap reveal">
+    <span class="slabel">Resultado Real</span>
+    <h2 class="stitle">O que acontece quando<br><em>você para de viver para fora</em></h2>
+    <div class="gold-rule"></div>
+    <div class="testim-card">
+      <p class="testim-text">Depois de muito tempo na mesma empresa, veio o layoff e me senti perdida. O processo foi o divisor de águas. Me ajudou a entender quem sou hoje, meus talentos, mas também os padrões que me barravam. Meu único arrependimento é não ter feito isso antes.</p>
+      <span class="testim-author">Cliente · Processo Essentya Desenvolvimento</span>
+    </div>
+    <div class="testim-card">
+      <p class="testim-text">Os encontros significaram o reencontro com a minha essência. Uma palavra: resignificado. A clareza gera segurança. Sou agente da minha vontade e das minhas escolhas.</p>
+      <span class="testim-author">Mentorada · Processo de Desenvolvimento</span>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="wrap reveal">
+    <span class="slabel">Sobre o Instituto</span>
+    <h2 class="stitle"><em>Essentya Desenvolvimento</em></h2>
+    <div class="gold-rule"></div>
+    <div class="about-box">
+      <h2>Um espaço de transformação real.</h2>
+      <p>A Essentya Desenvolvimento nasce da convicção de que todo processo de crescimento humano precisa partir de um autoconhecimento profundo e honesto. Nosso trabalho integra Inteligência Emocional, Psicologia Positiva, Psicanálise Junguiana, PNL e Numerologia Cabalística em uma abordagem que vai à raiz — não ao sintoma.</p>
+      <p>Desenvolvemos programas, mentorias e materiais digitais voltados para mulheres em processo de reinvenção pessoal e profissional — com suporte psicológico integrado quando a jornada exige esse acolhimento mais profundo.</p>
+      <p>Porque acreditamos que a transformação mais poderosa não acontece por fora. Acontece quando você finalmente se permite olhar para dentro.</p>
+      <div class="about-pillars">
+        <span class="pillar">Inteligência Emocional</span>
+        <span class="pillar">Psicologia Positiva</span>
+        <span class="pillar">Psicanálise Junguiana</span>
+        <span class="pillar">PNL</span>
+        <span class="pillar">Numerologia Cabalística</span>
+        <span class="pillar">Suporte Psicológico</span>
+        <span class="pillar">Reinvenção 40+</span>
+      </div>
+      <div style="margin-top:1.8rem;padding-top:1.5rem;border-top:1px solid rgba(200,169,110,.15);">
+        <a href="https://www.facebook.com/essentya.desenvolvimento" target="_blank" rel="noopener"
+           style="font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;">
+          → Siga a Essentya no Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guarantee-section">
+  <div class="wrap reveal">
+    <div class="g-ring"><span class="gdays">7</span><span class="glabel">dias</span></div>
+    <span class="slabel">Garantia Incondicional</span>
+    <h2 class="stitle">Risco zero<br><em>da sua parte</em></h2>
+    <p class="sintro">Se em até 7 dias você sentir que o conteúdo não entregou o que prometeu, basta solicitar o reembolso. Sem perguntas, sem burocracia.</p>
+  </div>
+</section>
+
+<section class="price-section">
+  <div class="wrap reveal">
+    <span class="slabel">Investimento</span>
+    <h2 class="stitle">Sua vida de volta<br><em>começa aqui</em></h2>
+    <div class="gold-rule"></div>
+    <div class="price-card">
+      <p class="price-name">A Vida que Não É Sua</p>
+      <div class="price-val"><span class="price-curr">R$</span>127</div>
+      <p class="price-sub">Pagamento único · Acesso imediato e vitalício</p>
+      <ul class="price-includes">
+        <li>Guia completo em PDF — 7 capítulos de reconexão profunda</li>
+        <li>Metodologia exclusiva Essentya Desenvolvimento</li>
+        <li>Exercícios de autoconhecimento ao final de cada capítulo</li>
+        <li>Acesso vitalício — retorne sempre que precisar</li>
+        <li>Garantia incondicional de 7 dias</li>
+      </ul>
+      <a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn" target="_blank" rel="noopener"
+         onclick="fbq('track','InitiateCheckout');" style="display:block;text-align:center;width:100%;">
+        Quero de Volta a Minha Vida — R$127
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="final-section">
+  <blockquote>"A mulher que você era antes de começar a viver para os outros ainda está aqui. Ela nunca foi embora. Só está esperando que você volte."</blockquote>
+  <cite>Essentya Desenvolvimento</cite>
+  <a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn" target="_blank" rel="noopener"
+     onclick="fbq('track','InitiateCheckout');">
+    Começar Agora — R$127
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Essentya Desenvolvimento</p>
+  <p style="margin-top:.5rem;">
+    <a href="https://wa.me/5511991400986">(11) 99140-0986</a> ·
+    <a href="mailto:prosperar@essentyadesenvolvimento.com.br">prosperar@essentyadesenvolvimento.com.br</a>
+  </p>
+  <p style="margin-top:.6rem;">
+    <a href="https://www.instagram.com/essentya.desenvolvimento/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--gold);border:1px solid rgba(200,169,110,.4);padding:.3rem .8rem;font-size:.72rem;letter-spacing:.08em;text-decoration:none;margin:.3rem;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#c8a96e" stroke="none"/></svg> &nbsp;Instagram</a>
+    <a href="https://www.facebook.com/essentya.desenvolvimento" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--gold);border:1px solid rgba(200,169,110,.4);padding:.3rem .8rem;font-size:.72rem;letter-spacing:.08em;text-decoration:none;margin:.3rem;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#c8a96e"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> &nbsp;Siga no Facebook<br>Essentya Desenvolvimento</a>
+  </p>
+  <p style="margin-top:.4rem;">Inteligência Emocional · Reinvenção 40+</p>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, {threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
