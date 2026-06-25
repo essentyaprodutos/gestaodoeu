@@ -230,4 +230,346 @@
     .rota-div {
       width: 1px;
       height: 20px;
-      background:
+      background: rgba(176,144,72,0.2);
+      flex-shrink: 0;
+    }
+    .rota-etapas {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .rota-etapas span {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(250,250,248,0.45);
+      transition: color 0.3s;
+    }
+    .rota-etapas span:hover { color: rgba(250,250,248,0.85); }
+    .rota-seta {
+      color: var(--dourado) !important;
+      font-size: 0.9rem !important;
+      letter-spacing: 0 !important;
+      opacity: 0.6;
+    }
+    @media (max-width: 900px) {
+      .rota-strip { padding: 20px 24px; }
+      .rota-div { display: none; }
+      .rota-label { width: 100%; margin-bottom: 8px; }
+    }
+
+    /* RESPONSIVE HERO */
+    @media (max-width: 900px) {
+      .home-hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-text { padding: 60px 24px; }
+      .hero-img { height: 55vw; min-height: 320px; }
+      .hero-img::before { background: linear-gradient(to top, #0A0A0A 0%, rgba(10,10,10,0.4) 40%, transparent 70%); }
+      .strip { padding: 18px 24px; }
+      .strip-inner { flex-direction: column; gap: 10px; align-items: flex-start; }
+      .strip-div { display: none; }
+      .strip-quote, .strip-cred { white-space: normal; }
+      .sobre-grid { grid-template-columns: 1fr; gap: 40px; }
+      .sobre-foto-wrap img { aspect-ratio: 4/3; }
+      .sobre-foto-wrap::after { display: none; }
+      .hero-stats { gap: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAVEGAÇÃO ═══════════════════════════════ -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-nome">Cecilia Baptista</span>
+    <span class="nav-logo-sub">Gestão do Eu</span>
+  </a>
+  <ul class="nav-menu">
+    <li><a href="index.html" class="ativo">Início</a></li>
+    <li><a href="mentoria.html">Mentorias</a></li>
+    <li><a href="ebooks.html">Ebooks</a></li>
+    <li><a href="processos.html">Processos</a></li>
+    <li><a href="palestra.html">Palestras</a></li>
+  </ul>
+  <a href="https://wa.me/5511991400986?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" class="nav-cta" target="_blank">Falar Agora</a>
+  <button class="nav-toggle" id="toggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══ HERO ════════════════════════════════════ -->
+<section class="home-hero">
+  <div class="hero-text fade-up">
+    <div class="sec-tag">Gestão do Eu · Inteligência Emocional</div>
+    <h1>Gerencie suas emoções.<br><em>Reinvente sua vida.</em></h1>
+    <p>Metodologia própria para quem está pronto para a segunda fase. Anamnese Emocional, PNL, Psicologia Positiva e ferramentas reais de transformação.</p>
+    <div class="hero-btns">
+      <a href="#servicos" class="btn btn-gold">Conhecer os Serviços</a>
+      <a href="https://wa.me/5511991400986?text=Olá%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais!" class="btn btn-outline" target="_blank">Fale Conosco</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num" data-count="500" data-prefix="+">+500</div>
+        <div class="stat-lbl">Vidas Transformadas</div>
+      </div>
+      <div>
+        <div class="stat-num" data-count="11">11</div>
+        <div class="stat-lbl">Ebooks Publicados</div>
+      </div>
+      <div>
+        <div class="stat-num" data-count="4">4</div>
+        <div class="stat-lbl">Áreas de Atuação</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="fotos/Gemini_Generated_Image_ooe53hooe53hooe5.png" alt="Cecilia Baptista">
+  </div>
+</section>
+
+<!-- ═══ STRIP MANIFESTO ══════════════════════════ -->
+<div class="strip">
+  <div class="strip-inner">
+    <span class="strip-quote">"Se você sente que está pronto para mudar, eu te mostro como."</span>
+    <div class="strip-div"></div>
+    <span class="strip-cred">Cecilia Baptista · Mentora & Treinadora</span>
+  </div>
+</div>
+
+<!-- ═══ SOBRE CECILIA ════════════════════════════ -->
+<section class="sec sec-cr">
+  <div class="sobre-grid">
+    <div class="sobre-foto-wrap" data-reveal>
+      <img src="fotos/foto cecilia.jpg" alt="Cecilia Baptista, Mentora e Treinadora">
+    </div>
+    <div class="sobre-texto" data-reveal data-delay="2">
+      <div class="sec-tag">Quem é</div>
+      <h2 class="sec-titulo"><em>Cecilia</em><br>Baptista</h2>
+      <p class="sobre-bio">Empreendedora, mentora e treinadora, especialista em Gestão das Emoções, Empreendedorismo, Reprogramação Mental e Elevação de Produtividade. Com técnicas avançadas de Anamnese Emocional, ajuda a ressignificar padrões, alinhar escolhas e destravar o verdadeiro potencial.</p>
+      <p class="sobre-bio">Atuação com metodologia própria de abordagem profunda psicoemocional, com foco em Reinvenção 40+, Constelação Hídrica e Terapia Junguiana integradas à Psicologia Positiva.</p>
+      <ul class="sobre-creds">
+        <li>Coach formada no Instituto Marcelo Lyouman e pela Sociedade Brasileira de Coaching</li>
+        <li>Especialização no Instituto Gerônimo Themel · Formada em PNL e Inteligência Emocional</li>
+        <li>Psicanálise Junguiana pela Psicologia Analítica no Instituto Luz</li>
+        <li>Carreira no segmento financeiro, varejo e Vendas · Estratégia de negócio</li>
+      </ul>
+      <p class="sobre-assinatura">"Gerencie suas emoções. Reinvente sua vida."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ROTA DE AÇÃO ══════════════════════════════ -->
+<div class="rota-strip">
+  <div class="rota-inner">
+    <span class="rota-label">Rota de Ação</span>
+    <div class="rota-div"></div>
+    <div class="rota-etapas">
+      <span>Identificação</span>
+      <span class="rota-seta">›</span>
+      <span>Reconhecimento</span>
+      <span class="rota-seta">›</span>
+      <span>Alinhamento</span>
+      <span class="rota-seta">›</span>
+      <span>Clareza</span>
+      <span class="rota-seta">›</span>
+      <span>Direção</span>
+      <span class="rota-seta">›</span>
+      <span>Exercício das Próprias Escolhas</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ÁREAS DE ATUAÇÃO ══════════════════════════ -->
+<section class="sec sec-dk" id="servicos">
+  <div class="servicos-wrap">
+    <div style="margin-bottom:56px" data-reveal>
+      <div class="sec-tag">Áreas de Atuação</div>
+      <h2 class="sec-titulo">O que <em>posso fazer</em><br>por você</h2>
+    </div>
+    <div class="grid-servicos" data-reveal>
+      <!-- MENTORIA -->
+      <a href="mentoria.html" class="card-servico">
+        <img src="Gaiola dourada com mulher.jpg" alt="Mentoria">
+        <div class="card-servico-body">
+          <div class="card-servico-num">01 · Serviço</div>
+          <h3>Mentorias</h3>
+          <p>GPS Emocional, I.N.T.E.I.R.A, Produtividade em Conexão e Processo de Desenvolvimento. Acompanhamento individualizado com metodologia própria.</p>
+          <span class="card-link">Ver programas ›</span>
+        </div>
+      </a>
+      <!-- EBOOKS -->
+      <a href="ebooks.html" class="card-servico">
+        <img src="fotos/MAPA.png" alt="Ebooks">
+        <div class="card-servico-body">
+          <div class="card-servico-num">02 · Serviço</div>
+          <h3>Ebooks</h3>
+          <p>11 títulos de transformação profunda: autossabotagem, liderança feminina, reinvenção 40+, equação emocional e muito mais.</p>
+          <span class="card-link">Ver coleção ›</span>
+        </div>
+      </a>
+      <!-- PROCESSOS -->
+      <a href="processos.html" class="card-servico">
+        <img src="fotos/CHAVE NA PORTA.png" alt="Processos">
+        <div class="card-servico-body">
+          <div class="card-servico-num">03 · Serviço</div>
+          <h3>Processos</h3>
+          <p>Anamnese Emocional, Terapia Speed, Jornada Inteira e Despertando o GPS Interno. Diagnóstico e transformação em profundidade.</p>
+          <span class="card-link">Ver processos ›</span>
+        </div>
+      </a>
+      <!-- PALESTRA -->
+      <a href="palestra.html" class="card-servico">
+        <img src="fotos/PALESTRA foto nova.png" alt="Palestra">
+        <div class="card-servico-body">
+          <div class="card-servico-num">04 · Serviço</div>
+          <h3>Palestras</h3>
+          <p>Temas que movem platéias: Inteligência Emocional, Reinvenção 40+, Liderança Feminina, Saúde Mental e Empreendedorismo com Propósito.</p>
+          <span class="card-link">Saiba mais ›</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DEPOIMENTOS ══════════════════════════════ -->
+<section class="sec sec-cr">
+  <div class="dep-wrap">
+    <div style="margin-bottom:52px;text-align:center" data-reveal>
+      <div class="sec-tag" style="justify-content:center">Resultados Reais</div>
+      <h2 class="sec-titulo" style="text-align:center"><em>Vidas</em> que se transformaram</h2>
+    </div>
+    <div class="grid-dep">
+      <div class="card-dep" data-reveal data-delay="1">
+        <div class="card-dep-aspas">"</div>
+        <p>Depois de muito tempo na mesma empresa, veio o layoff e me senti perdida. O processo de Anamnese Emocional com a Cecilia foi o divisor de águas que eu precisava. Me ajudou a entender quem sou hoje, meus talentos, mas também os sabotadores que me barravam. Meu único arrependimento é não ter feito isso antes.</p>
+        <div class="card-dep-autor">Cliente · Anamnese Emocional</div>
+      </div>
+      <div class="card-dep" data-reveal data-delay="2">
+        <div class="card-dep-aspas">"</div>
+        <p>O processo de mentoria para mim pode ser resumido em duas palavras: coragem e empoderamento. Em um processo de muita conexão, amizade e respeito, fui levada a olhar para a profissional que sou. Foi transformador.</p>
+        <div class="card-dep-autor">Mentorada · Processo de Desenvolvimento</div>
+      </div>
+      <div class="card-dep" data-reveal data-delay="3">
+        <div class="card-dep-aspas">"</div>
+        <p>Os cinco encontros significaram para mim o reencontro com a minha essência e a construção de uma nova forma de olhar minha jornada. Uma palavra: Resignificado. A clareza gera segurança. Sou agente da minha vontade e das minhas escolhas.</p>
+        <div class="card-dep-autor">Mentorada · Mentoria Individual</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL ════════════════════════════════ -->
+<section class="sec-cta" data-reveal>
+  <div class="sec-tag" style="justify-content:center;margin-bottom:14px">Comece Agora</div>
+  <h2 class="sec-titulo"><em>Pronta</em> para se reinventar?</h2>
+  <p class="sec-sub">A segunda fase da sua vida começa com uma decisão. Dê o primeiro passo e descubra o que é possível quando você assume o controle das suas emoções.</p>
+  <div class="btns-cta" style="margin-top:40px">
+    <a href="https://wa.me/5511991400986?text=Olá%2C%20quero%20começar%20minha%20jornada%20de%20transformação!" class="btn btn-gold" target="_blank">Fale Conosco no WhatsApp</a>
+    <a href="processos.html" class="btn btn-outline">Conhecer os Processos</a>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-nome">Essentya Desenvolvimento</div>
+      <div class="footer-sub-marca">Gestão do Eu · gestaodoeu.com.br</div>
+      <p class="footer-bio">Mentora e treinadora especialista em Inteligência Emocional, PNL e Gestão das Emoções. Metodologia própria para a sua reinvenção.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/essentya.desenvolvimento" target="_blank" title="Facebook">FB</a>
+        <a href="https://instagram.com/essentyadesenvolvimento" target="_blank" title="Instagram">IG</a>
+        <a href="https://wa.me/5511991400986" target="_blank" title="WhatsApp">WA</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Serviços</h5>
+      <ul>
+        <li><a href="mentoria.html">Mentorias</a></li>
+        <li><a href="ebooks.html">Ebooks</a></li>
+        <li><a href="processos.html">Processos</a></li>
+        <li><a href="palestra.html">Palestras</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Destaques</h5>
+      <ul>
+        <li><a href="processos.html">Anamnese Emocional</a></li>
+        <li><a href="ebooks.html">Reinvenção 40+</a></li>
+        <li><a href="mentoria.html">GPS Emocional</a></li>
+        <li><a href="processos.html">Terapia Speed</a></li>
+        <li><a href="mentoria.html">I.N.T.E.I.R.A</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contato</h5>
+      <div class="footer-contato">
+        <strong>WhatsApp</strong>
+        <a href="https://wa.me/5511991400986" target="_blank">(11) 99140-0986</a>
+        <br><br>
+        <strong>E-mail</strong>
+        <a href="mailto:gestaodoeu26@gmail.com">gestaodoeu26@gmail.com</a>
+        <br><br>
+        <strong>Instagram</strong>
+        <a href="https://instagram.com/essentyadesenvolvimento" target="_blank">@essentyadesenvolvimento</a>
+        <br><br>
+        <strong>Facebook</strong>
+        <a href="https://www.facebook.com/essentya.desenvolvimento" target="_blank">Essentya Desenvolvimento</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <p>© 2026 Essentya Desenvolvimento · gestaodoeu.com.br · Todos os direitos reservados</p>
+    <p>Gestão do Eu · Inteligência Emocional · Reinvenção 40+</p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const toggle = document.getElementById('toggle');
+  const menu = document.querySelector('.nav-menu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('aberto');
+    menu.classList.toggle('aberto');
+  });
+  // Fechar menu ao clicar em link
+  document.querySelectorAll('.nav-menu a').forEach(a => {
+    a.addEventListener('click', () => {
+      toggle.classList.remove('aberto');
+      menu.classList.remove('aberto');
+    });
+  });
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('[data-reveal]').forEach(el => obs.observe(el));
+
+  // Contador animado
+  function animarContador(el) {
+    const alvo = parseInt(el.dataset.count);
+    const prefixo = el.dataset.prefix || '';
+    const duracao = 1800;
+    const inicio = performance.now();
+    function tick(agora) {
+      const progresso = Math.min((agora - inicio) / duracao, 1);
+      const ease = 1 - Math.pow(1 - progresso, 3);
+      el.textContent = prefixo + Math.floor(ease * alvo);
+      if (progresso < 1) requestAnimationFrame(tick);
+      else el.textContent = prefixo + alvo;
+    }
+    requestAnimationFrame(tick);
+  }
+  const obsCount = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting && e.target.dataset.count) {
+        animarContador(e.target);
+        obsCount.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-count]').forEach(el => obsCount.observe(el));
+</script>
+</body>
+</html>
