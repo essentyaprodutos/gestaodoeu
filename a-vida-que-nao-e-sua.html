@@ -144,7 +144,7 @@ footer a{color:var(--gold);text-decoration:none;}
 <div class="strip">Acesso imediato após confirmação do pagamento</div>
 
 <section class="hero">
-  <img class="hero-img" src="avida-foto1_1.jpg" alt="A Vida que Não É Sua">
+  <img class="hero-img" src="avida-foto1_1.jpg" alt="A Vida que Não É Sua" fetchpriority="high" decoding="async">
   <div class="hero-shade"></div>
   <div class="hero-body">
     <span class="hero-eyebrow">Essentya Desenvolvimento</span>
@@ -164,7 +164,7 @@ footer a{color:var(--gold);text-decoration:none;}
 
 <section style="background:var(--black);padding:4rem 2rem;text-align:center;border-bottom:1px solid rgba(200,169,110,.12);">
   <div style="max-width:420px;margin:0 auto;box-shadow:0 20px 60px rgba(0,0,0,.5);">
-    <video controls playsinline poster="a-vida-que-nao-e-sua-poster.jpg" style="width:100%;display:block;">
+    <video controls playsinline preload="none" poster="a-vida-que-nao-e-sua-poster.jpg" style="width:100%;display:block;">
       <source src="a-vida-que-nao-e-sua-web (3).mp4" type="video/mp4">
     </video>
   </div>
@@ -173,7 +173,7 @@ footer a{color:var(--gold);text-decoration:none;}
 <div class="book-section">
   <div class="book-inner reveal" style="padding:5rem 2rem;">
     <div class="book-img-wrap">
-      <img src="avida-foto2_1_1.jpg" alt="A Vida que Não É Sua">
+      <img src="avida-foto2_1_1.jpg" alt="A Vida que Não É Sua" loading="lazy" decoding="async">
     </div>
     <div class="book-text">
       <span class="slabel" style="text-align:left;">O Guia</span>
@@ -216,10 +216,10 @@ footer a{color:var(--gold);text-decoration:none;}
 <div class="mid-cta reveal">
   <p class="pname">A Vida que Não É Sua</p>
   <p class="pval"><sup>R$</sup>127</p>
-  <p class="pnote">Pagamento único · PDF com acesso vitalício</p>
+  <p class="pnote">Pagamento único · PDF com acesso vitalício · Exercícios de autoconhecimento em cada capítulo</p>
   <a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn" target="_blank" rel="noopener"
      onclick="fbq('track','InitiateCheckout');">
-    Quero de Volta a Minha Vida — R$127
+    Quero de Volta a Minha Vida
   </a>
 </div>
 
@@ -274,6 +274,7 @@ footer a{color:var(--gold);text-decoration:none;}
     <span class="slabel">Resultado Real</span>
     <h2 class="stitle">O que acontece quando<br><em>você para de viver para fora</em></h2>
     <div class="gold-rule"></div>
+    <p class="sintro" style="margin-top:2rem;margin-bottom:0;">Depoimentos de mulheres que viveram, no processo de acompanhamento da Essentya, o mesmo método que deu origem a este guia.</p>
     <div class="testim-card">
       <p class="testim-text">Depois de muito tempo na mesma empresa, veio o layoff e me senti perdida. O processo foi o divisor de águas. Me ajudou a entender quem sou hoje, meus talentos, mas também os padrões que me barravam. Meu único arrependimento é não ter feito isso antes.</p>
       <span class="testim-author">Cliente · Processo Essentya Desenvolvimento</span>
@@ -341,7 +342,7 @@ footer a{color:var(--gold);text-decoration:none;}
       </ul>
       <a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn" target="_blank" rel="noopener"
          onclick="fbq('track','InitiateCheckout');" style="display:block;text-align:center;width:100%;">
-        Quero de Volta a Minha Vida — R$127
+        Quero de Volta a Minha Vida
       </a>
     </div>
   </div>
@@ -352,7 +353,7 @@ footer a{color:var(--gold);text-decoration:none;}
   <cite>Essentya Desenvolvimento</cite>
   <a href="https://pay.kiwify.com.br/mLnVqJZ" class="btn" target="_blank" rel="noopener"
      onclick="fbq('track','InitiateCheckout');">
-    Começar Agora — R$127
+    Começar Agora
   </a>
 </section>
 
